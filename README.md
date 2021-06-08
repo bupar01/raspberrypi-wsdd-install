@@ -14,11 +14,9 @@ The python3 [wsdd script](https://github.com/christgau/wsdd) by Steffen Christga
 {
 
 	wget https://raw.githubusercontent.com/christgau/wsdd/master/src/wsdd.py
-
 	sudo mv wsdd.py /usr/local/bin/wsdd.py && sudo chmod a+x /usr/local/bin/wsdd.py
-
 	sudo systemctl edit --force --full wsdd.service
-    
+
 }
 
 
