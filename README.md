@@ -8,29 +8,27 @@ Note: This is independent of SMBv1 issue.
 
 ## How do you install it in Raspberry Pi OS
 1. make sure python3 is installed and where it is
-	`which python3`
+	```
+	which python3
+	```
 1. install python3 if not present
-    `sudo apt install python3`
+    ```
+	sudo apt install python3
+	```
 
 The next series of commands do the following:
 
 3. download wsdd.py from github
 1. move file to /usr/local/bin and make executable
 1. create service and open editor for edit
-
-
-{
-
+	```
 	wget https://raw.githubusercontent.com/christgau/wsdd/master/src/wsdd.py
 	sudo mv wsdd.py /usr/local/bin/wsdd.py && sudo chmod a+x /usr/local/bin/wsdd.py
 	sudo systemctl edit --force --full wsdd.service
-
-}
+	```
 
 Enter next block into the editor, edit location of python3 obtained in step 1 above, and save:
-
-{
-
+```
 	[Unit]
 	Description=WSDD Service
 	Wants=network.target
@@ -44,10 +42,10 @@ Enter next block into the editor, edit location of python3 obtained in step 1 ab
 	 
 	[Install]
 	WantedBy=multi-user.target
-
-}
-
-
+```
 6. enable  & start service
 
-	`sudo systemctl enable wsdd.service && sudo systemctl start wsdd.service`
+	```
+	sudo systemctl enable wsdd.service && sudo systemctl start wsdd.service
+	```
+	
