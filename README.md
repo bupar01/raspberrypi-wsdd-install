@@ -13,7 +13,7 @@ The next series of commands do the following:
 
 3. download wsdd.py from github
 1. move file to /usr/local/bin and make executable
-1. create service and enter into editor
+1. create service and open editor for edit
 
 
 {
