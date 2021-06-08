@@ -29,23 +29,22 @@ The next series of commands do the following:
 
 Enter next block into the editor, edit location of python3 obtained in step 1 above, and save:
 ```
-	[Unit]
-	Description=WSDD Service
-	Wants=network.target
-	After=network.target
-	 
-	[Service]
-	ExecStartPre=/bin/sleep 5
-	ExecStart=/usr/bin/python3 /usr/local/bin/wsdd.py
-	Restart=always
-	RestartSec=1
-	 
-	[Install]
-	WantedBy=multi-user.target
+[Unit]
+Description=WSDD Service
+Wants=network.target
+After=network.target
+
+[Service]
+ExecStartPre=/bin/sleep 5
+ExecStart=/usr/bin/python3 /usr/local/bin/wsdd.py
+Restart=always
+RestartSec=1
+ 
+[Install]
+WantedBy=multi-user.target
 ```
 6. enable  & start service
 
 	```
 	sudo systemctl enable wsdd.service && sudo systemctl start wsdd.service
 	```
-	
