@@ -10,7 +10,7 @@ The python3 [wsdd script](https://github.com/christgau/wsdd) by Steffen Christga
     `sudo apt install python3`
 
 The next series of commands do the following:
-1. download wsdd.py from github
+3. download wsdd.py from github
 1. move file to /usr/local/bin and make executable
 1. create service and enter into editor
 
@@ -44,6 +44,6 @@ Enter next block into the editor, edit location of python3 obtained in step 1 ab
 }
 
 
-5. enable  & start service
+6. enable  & start service
 
 	`sudo systemctl enable wsdd.service && sudo systemctl start wsdd.service`
