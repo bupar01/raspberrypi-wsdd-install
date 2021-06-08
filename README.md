@@ -12,11 +12,13 @@ The python3 [wsdd script](https://github.com/christgau/wsdd) by Steffen Christga
 
 
 	`wget https://raw.githubusercontent.com/christgau/wsdd/master/src/wsdd.py`
+
 	`mv wsdd.py /usr/local/bin/wsdd.py && chmod a+x /usr/local/bin/wsdd.py`
+
 	`systemctl edit --force --full wsdd.service`
 
 
-{
+
 	[Unit]
 	Description=WSDD Service
 	Wants=network.target
@@ -30,10 +32,11 @@ The python3 [wsdd script](https://github.com/christgau/wsdd) by Steffen Christga
 	 
 	[Install]
 	WantedBy=multi-user.target
-}
 
-1. enable service
+
+5. enable service
 1. start service
 
 	`systemctl enable wsdd.service`
+    
 	`systemctl start wsdd.service`
