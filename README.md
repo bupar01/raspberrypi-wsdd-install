@@ -4,6 +4,7 @@ Web Service Discovery host daemon (WSDD) allows linux machines to show up in Win
 Since Windows 10 updates in 2021, and may be shortly before that, samba servers are no longer showing up in Windows Explorer's Network window.
 The python3 [wsdd script](https://github.com/christgau/wsdd) by Steffen Christgau published in GitHub implemented a Web Service Discovery host daemon provides a workaround for this problem until samba implements an internal solution.
 ## How do you install it in Raspberry Pi OS
+The first series of commands do the following:
 1. make sure python3 is installed and where it is, install python3 if not present (apt install python3) 
 	which python3
 1. download wsdd.py from github
@@ -19,6 +20,7 @@ The python3 [wsdd script](https://github.com/christgau/wsdd) by Steffen Christga
 
 }
 
+Enter next block into the editor and save:
 
 {
 
