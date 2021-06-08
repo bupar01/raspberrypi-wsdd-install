@@ -11,15 +11,18 @@ The python3 [wsdd script](https://github.com/christgau/wsdd) by Steffen Christga
 1. create service and enter into editor
 
 
-	`wget https://raw.githubusercontent.com/christgau/wsdd/master/src/wsdd.py`
+{
 
-	`sudo mv wsdd.py /usr/local/bin/wsdd.py && sudo chmod a+x /usr/local/bin/wsdd.py`
+	wget https://raw.githubusercontent.com/christgau/wsdd/master/src/wsdd.py
 
-	`sudo systemctl edit --force --full wsdd.service`
+	sudo mv wsdd.py /usr/local/bin/wsdd.py && sudo chmod a+x /usr/local/bin/wsdd.py
+
+	sudo systemctl edit --force --full wsdd.service
+    
+}
 
 
-
-
+{
 
 	[Unit]
 	Description=WSDD Service
@@ -35,7 +38,7 @@ The python3 [wsdd script](https://github.com/christgau/wsdd) by Steffen Christga
 	[Install]
 	WantedBy=multi-user.target
 
-
+}
 
 
 5. enable service & start service
