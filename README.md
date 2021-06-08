@@ -18,7 +18,9 @@ The python3 [wsdd script](https://github.com/christgau/wsdd) by Steffen Christga
 	`systemctl edit --force --full wsdd.service`
 
 
+
 {
+
 	[Unit]
 	Description=WSDD Service
 	Wants=network.target
@@ -33,6 +35,7 @@ The python3 [wsdd script](https://github.com/christgau/wsdd) by Steffen Christga
 	[Install]
 	WantedBy=multi-user.target
 }
+
 
 5. enable service
 1. start service
