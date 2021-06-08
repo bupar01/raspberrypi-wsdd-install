@@ -10,6 +10,7 @@ The python3 [wsdd script](https://github.com/christgau/wsdd) by Steffen Christga
     `sudo apt install python3`
 
 The next series of commands do the following:
+
 3. download wsdd.py from github
 1. move file to /usr/local/bin and make executable
 1. create service and enter into editor
